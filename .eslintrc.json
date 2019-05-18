@@ -6,6 +6,9 @@
   },
   "rules": {
     "comma-dangle": ["error", "never"],
-    "prefer-const": "error"
+    "prefer-const": "error",
+    "no-trailing-spaces": "error",
+    "semi": "error",
+    "indent": ["error", 2]
   }
 }
