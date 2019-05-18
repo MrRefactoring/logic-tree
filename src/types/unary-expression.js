@@ -1,7 +1,4 @@
 class UnaryExpression {
-
-  static type = 'UnaryExpression';
-
   constructor(token, value) {
     this.type = UnaryExpression.type;
     this.name = token.value;
@@ -16,5 +13,7 @@ class UnaryExpression {
     };
   }
 }
+
+UnaryExpression.type = 'UnaryExpression';
 
 module.exports = UnaryExpression;

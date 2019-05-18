@@ -8,25 +8,23 @@
     "parser",
     "tree"
   ],
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "mocha --require babel-register test",
-    "lint": "eslint src/**/*.js"
+    "test": "mocha test",
+    "test:coverage": "nyc mocha test",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "npm run lint -- --fix"
   },
   "author": "Ivan Reyvart",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-builtin-extend": "^1.1.2",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "chai": "^4.1.2",
-    "eslint": "^4.12.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.8.0",
-    "mocha": "^4.0.1"
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
   },
   "dependencies": {
-    "ramda": "^0.25.0"
+    "ramda": "^0.26.1"
   }
 }

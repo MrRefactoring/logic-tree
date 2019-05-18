@@ -1,7 +1,4 @@
 class BinaryExpression {
-
-  static type = 'BinaryExpression';
-
   constructor(token, params) {
     this.token = token;
     this.type = BinaryExpression.type;
@@ -19,5 +16,7 @@ class BinaryExpression {
     };
   }
 }
+
+BinaryExpression.type = 'BinaryExpression';
 
 module.exports = BinaryExpression;

@@ -64,8 +64,8 @@ class Parser {
 
     this.next();
 
-    let left = this.contextTree;
-    let right = this.parseByToken(nextToken);
+    const left = this.contextTree;
+    const right = this.parseByToken(nextToken);
 
     if (left instanceof BinaryExpression) {
       if (priorities.get(left.token.name) < priorities.get(token.name)) {
@@ -99,7 +99,7 @@ class Parser {
        * TODO: think about Iterator
        */
       let currentPosition = this.current;
-      let subTokens = [];
+      const subTokens = [];
       while (currentPosition < this.tokens.length) {
         const token = this.peek(currentPosition - this.current);
 

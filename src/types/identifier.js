@@ -1,7 +1,4 @@
 class Identifier {
-
-  static type = 'Identifier';
-
   constructor(token) {
     this.type = Identifier.type;
     this.name = token.value;
@@ -14,5 +11,7 @@ class Identifier {
     };
   }
 }
+
+Identifier.type = 'Identifier';
 
 module.exports = Identifier;
