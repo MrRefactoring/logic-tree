@@ -11,8 +11,6 @@ class TreeNode {
       writable: false,
       value: () => parentNode
     });
-
-    // getParent: (cn => cn).bind(null, currentNode)
   }
 }
 

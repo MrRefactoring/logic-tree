@@ -12,7 +12,6 @@ priorities.set(tokens.names.AND, 10);
 priorities.set(tokens.names.OR, 5);
 
 class Parser {
-
   constructor(tokens) {
     this.tokens = tokens;
     this.current = 0;

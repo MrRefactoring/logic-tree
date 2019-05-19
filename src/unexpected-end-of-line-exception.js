@@ -1,5 +1,4 @@
 class UnexpectedEndOfLineException extends Error {
-
   constructor(expectedNames) {
     super();
 

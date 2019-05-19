@@ -2,7 +2,6 @@ const head = require('ramda/src/head');
 const tokens = require('./tokens');
 
 class Tokenizer {
-
   /**
    * @param text {string} - source code
    * @param config {Object?}
